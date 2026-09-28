@@ -11,13 +11,21 @@ Marketing analytics · NUS Business School, BMS5504 Marketing Analytics, Visuali
 
 ---
 
-## Dashboards I built
-| Dashboard | What it shows |
+## The Tableau workbook: 5 dashboards, 15 sheets
+| Dashboard | Sheets |
 |---|---|
-| Executive KPIs | Total sales, operating profit, units sold, average margin |
-| Regions & states | Sales and operating margin by region, and a state-level demand map |
-| Products | Operating profit, margin and profit per unit by category |
-| Retailers, channels & trends | Sales by retailer and channel (in-store, outlet, online); monthly trends through COVID |
+| **Executive Sales Performance** | KPI strip (sales, operating profit, units, margin) · sales by region · operating profit by product · sales by sales method |
+| **Profitability & Geographic Insights** | State-level sales map (colour and size = sales) · operating margin by product · sales vs margin bubble chart by product |
+| **Product Efficiency & Sales Analysis** | Sales vs units bubble chart (size = operating profit) · profit per unit by product · regional sales + margin combo chart |
+| **Sales Trend & Retailer Insights** | Monthly sales trend · sales by retailer |
+| **Sales Growth & Trend Analysis** | Sales by channel × year · month-on-month and quarter-on-quarter growth (sheets by teammate Li Yiyue) |
+
+**Calculated fields I wrote:**
+- `Profit per Unit = SUM([Operating Profit]) / SUM([Units Sold])`
+- `Operating Margin % = SUM([Operating Margin]) / SUM([Total Sales])`
+- `Margin Label`, for margin labels on the combo chart
+
+The team's growth sheets use a `YOY Growth` table calculation built with `LOOKUP`.
 
 ## Findings
 1. **High sales doesn't mean high margin.** The West leads revenue; the South and Midwest have stronger margins at lower volume.
@@ -40,4 +48,4 @@ Marketing analytics · NUS Business School, BMS5504 Marketing Analytics, Visuali
 Cecilia Danielli · Chu Chin Yue · Feng Xiaohan · He Qingyan · Li Yiyue · Rick Rowen van der Maas · Ameer Batcha
 
 ---
-Part of my portfolio · **[ameer29.github.io](https://ameer29.github.io)** · Interactive Tableau link coming soon
+Part of my portfolio · **[ameer29.github.io](https://ameer29.github.io)** · Interactive Tableau Public link coming soon
